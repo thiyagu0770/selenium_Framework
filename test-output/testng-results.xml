@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-01-30T11:26:30 IST" name="Suite" finished-at="2026-01-30T11:27:06 IST" duration-ms="36033">
+    <groups>
+    </groups>
+    <test started-at="2026-01-30T11:26:30 IST" name="Test" finished-at="2026-01-30T11:27:06 IST" duration-ms="36033">
+      <class name="org.test.X">
+        <test-method signature="tc21()[pri:0, instance:org.test.X@5b218417]" started-at="2026-01-30T11:26:44 IST" name="tc21" finished-at="2026-01-30T11:26:52 IST" duration-ms="8222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc21 -->
+        <test-method signature="tc22()[pri:0, instance:org.test.X@5b218417]" started-at="2026-01-30T11:26:44 IST" name="tc22" finished-at="2026-01-30T11:26:54 IST" duration-ms="9666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc22 -->
+      </class> <!-- org.test.X -->
+      <class name="org.test.Y">
+        <test-method signature="tc31()[pri:0, instance:org.test.Y@645aa696]" started-at="2026-01-30T11:26:52 IST" name="tc31" finished-at="2026-01-30T11:27:00 IST" duration-ms="7949" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc31 -->
+        <test-method signature="tc32()[pri:0, instance:org.test.Y@645aa696]" started-at="2026-01-30T11:26:54 IST" name="tc32" finished-at="2026-01-30T11:27:06 IST" duration-ms="12067" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc32 -->
+      </class> <!-- org.test.Y -->
+      <class name="org.test.Z">
+        <test-method signature="tc42()[pri:0, instance:org.test.Z@3ba987b8]" started-at="2026-01-30T11:26:30 IST" name="tc42" finished-at="2026-01-30T11:26:44 IST" duration-ms="14030" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc42 -->
+        <test-method signature="tc41()[pri:0, instance:org.test.Z@3ba987b8]" started-at="2026-01-30T11:26:30 IST" name="tc41" finished-at="2026-01-30T11:26:44 IST" duration-ms="14127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc41 -->
+      </class> <!-- org.test.Z -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

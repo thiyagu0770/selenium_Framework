@@ -55,7 +55,8 @@ public class TestNGTask extends BaseClass {
 		return new Object[][] { 
 			{ "thiyaguadmin", "Admin@123" },
 			{ "userthiyagu", "pass@123" },
-			{ "admin", "Admin@1234" }, 
+			{"Admin","Admin@1234"},
+			{"Doctor","Admin@123"},
 			{ "", "" },
 
 		};

@@ -31,6 +31,8 @@ public class Search_Hotel extends BaseClass {
 	  
 	  SearchHotelPojo sh = new SearchHotelPojo();
 	  
+	  explicitWait(sh.getLocation(), 10);
+	  
 	  String location = excelRead("Hotel", 1, 0);
 	  String hotel = excelRead("Hotel", 1, 1);
 	  String roomType = excelRead("Hotel", 1, 2);
@@ -41,7 +43,7 @@ public class Search_Hotel extends BaseClass {
       selectByVisibleText(sh.getLocation(), location);
       selectByVisibleText(sh.getHotel(), hotel);
       selectByVisibleText(sh.getRoom(), roomType);
-      selectByValue(sh.getRoomnumber(), rooms);
+      selectByVisibleText(sh.getRoomnumber(), rooms);
       selectByVisibleText(sh.getAdult(), adultperRoom);
       
 	  }

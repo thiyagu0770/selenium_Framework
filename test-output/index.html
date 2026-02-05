@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Admin\AppData\Local\Temp\testng-eclipse--1034641315\testng-customsuite.xml</span>
+                    <span>C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1395955854\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -129,9 +129,14 @@
                   <a name="searchHotel">
                   </a> <!-- searchHotel -->
                   <span class="method-name">searchHotel</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at org.sample.BaseClass.excelRead(BaseClass.java:182)
-	at org.test.Search_Hotel.searchHotel(Search_Hotel.java:36)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Hotel Creek
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.29&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
+	at org.sample.BaseClass.selectByVisibleText(BaseClass.java:120)
+	at org.test.Search_Hotel.searchHotel(Search_Hotel.java:43)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -169,7 +174,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Admin\AppData\Local\Temp\testng-eclipse--1034641315\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1395955854\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -222,12 +227,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'searchHotel')
 data.setCell(0, 2, 'org.test.Search_Hotel')
-data.setCell(0, 3, 168);
+data.setCell(0, 3, 475);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 168 ms</span>
+              <span class="suite-total-time">Total running time: 475 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -262,11 +267,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">searchHotel</span>
-                <span class="method-start">14400 ms</span>
+                <span class="method-start">15093 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">postcondition</span>
-                <span class="method-start">14583 ms</span>
+                <span class="method-start">15577 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

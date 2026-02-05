@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Feb 05 14:53:00 IST 2026</td>
+<td>Started on:</td><td>Thu Feb 05 17:47:16 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>14 seconds (14635 ms)</td>
+<tr><td>Total time:</td><td>15 seconds (15626 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,9 +77,14 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='org.test.Search_Hotel.searchHotel()'><b>searchHotel</b><br>Test class: org.test.Search_Hotel</td>
-<td><div><pre>java.lang.NullPointerException
-	at org.sample.BaseClass.excelRead(BaseClass.java:182)
-	at org.test.Search_Hotel.searchHotel(Search_Hotel.java:36)
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Hotel Creek
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.29&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
+	at org.sample.BaseClass.selectByVisibleText(BaseClass.java:120)
+	at org.test.Search_Hotel.searchHotel(Search_Hotel.java:43)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -108,10 +113,15 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1709317347", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1709317347'><pre>java.lang.NullPointerException
-	at org.sample.BaseClass.excelRead(BaseClass.java:182)
-	at org.test.Search_Hotel.searchHotel(Search_Hotel.java:36)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2022562847", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2022562847'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Hotel Creek
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.29&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
+	at org.sample.BaseClass.selectByVisibleText(BaseClass.java:120)
+	at org.test.Search_Hotel.searchHotel(Search_Hotel.java:43)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

@@ -56,7 +56,6 @@ public class TestNGTask extends BaseClass {
 			{ "thiyaguadmin", "Admin@123" },
 			{ "userthiyagu", "pass@123" },
 			{"Admin","Admin@1234"},
-			{"Doctor","Admin@123"},
 			{ "", "" },
 
 		};

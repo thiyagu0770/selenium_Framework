@@ -151,7 +151,7 @@ public class BaseClass {
 		
 	}
 	
-	public static String excelRead(int rowNo, int cellNo) throws Exception {
+	public static String excelRead(String sheetName, int rowNo, int cellNo) throws Exception {
 		
 	File f = new File("D:\\DOC\\Testing-Workspace\\Selenium-Framework\\excel\\Data.xlsx");
 		
@@ -162,7 +162,7 @@ public class BaseClass {
 		
 		//workbook -->sheet -->row-->cell-->data
 		//to get sheet from workbook interface
-		Sheet s = w.getSheet("Credential");
+		Sheet s = w.getSheet(sheetName);
 		
 		/*// to get row from sheet interface
 		Row r = s.getRow(1);
@@ -209,7 +209,4 @@ public class BaseClass {
 			}
 		
 
-	
-	
-	
 }

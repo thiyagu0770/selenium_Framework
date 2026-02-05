@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.test.B">
+      <class name="org.test.Search_Hotel">
         <methods>
-          <include name="tc31" invocation-numbers="0 1"/>
+          <include name="postcondition"/>
+          <include name="searchHotel"/>
+          <include name="preCondition"/>
         </methods>
-      </class> <!-- org.test.B -->
+      </class> <!-- org.test.Search_Hotel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

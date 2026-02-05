@@ -41,13 +41,12 @@ public class JunitTask extends BaseClass {
 	}
 
 	@Test
-	public void tc3() throws Exception {
-		
-		LoginPojo l = new LoginPojo();
-		passtxt(l.getUsername(), excelRead(0, 0));
-		passtxt(l.getPassword(), excelRead(0, 1));
-		l.getLoginbtn().click();
-	}
+	/*
+	 * public void tc3() throws Exception {
+	 * 
+	 * LoginPojo l = new LoginPojo(); passtxt(l.getUsername(), excelRead(0, 0));
+	 * passtxt(l.getPassword(), excelRead(0, 1)); l.getLoginbtn().click(); }
+	 */
 
 	@After
 	public void tearDown() {

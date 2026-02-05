@@ -19,16 +19,11 @@ public class TestNGTask extends BaseClass {
 	private void preCondition() {
 		browserLaunch();
 		browsermax();
-
-	}
-
-	@BeforeMethod
-	private void startTime() {
 		loadURL("https://adactinhotelapp.com/");
-		System.out.println("Start Time : " + new Date());
 
 	}
 
+	
 	/*
 	 * @Parameters({ "email1", "Pass1" })
 	 * 
@@ -69,11 +64,7 @@ public class TestNGTask extends BaseClass {
 	 * passtxt(l.getPassword(), excelRead(0, 1)); l.getLoginbtn().click(); }
 	 */
 
-	@AfterMethod
-	private void endTime() {
-		System.out.println("End Time : " + new Date());
-
-	}
+	
 
 	@AfterClass
 	private void postcondition() {

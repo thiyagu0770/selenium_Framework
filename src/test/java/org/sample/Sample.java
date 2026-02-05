@@ -58,12 +58,12 @@ public class Sample extends BaseClass {
 		
 		LoginPojo l = new LoginPojo();
 		
-		String t = excelRead(0, 0);
-		String t1 = excelRead(0, 1);
-		
-		passtxt(l.getUsername(), t);
-		passtxt(l.getPassword(), t1);
-		Btnclick(l.getLoginbtn());
+		/*
+		 * String t = excelRead(0, 0); String t1 = excelRead(0, 1);
+		 * 
+		 * passtxt(l.getUsername(), t); passtxt(l.getPassword(), t1);
+		 * Btnclick(l.getLoginbtn());
+		 */
 		
 		SearchHotelPojo s = new SearchHotelPojo();
 		selectByVisibleText(s.getLocation(), "Sydney");

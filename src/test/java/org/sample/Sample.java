@@ -67,8 +67,8 @@ public class Sample extends BaseClass {
 		
 		SearchHotelPojo s = new SearchHotelPojo();
 		selectByVisibleText(s.getLocation(), "Sydney");
-		selectByVisibleText(s.getHotel(), "Hotel Creek");
-		selectByValue(s.getRoom(), "Standard");
+		selectByVisibleText(s.getHotels(), "Hotel Creek");
+		selectByValue(s.getRoomnumber(), "Standard");
 		selectByIndex(s.getRoomnumber(), 2);
 		selectByIndex(s.getAdult(), 1);
 		selectByIndex(s.getChild(), 0);

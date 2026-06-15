@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.test.Search_Hotel">
+      <class name="org.test.Search_HotelExcel">
         <methods>
           <include name="postcondition"/>
-          <include name="searchHotel"/>
+          <include name="bookHotel"/>
           <include name="preCondition"/>
         </methods>
-      </class> <!-- org.test.Search_Hotel -->
+      </class> <!-- org.test.Search_HotelExcel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

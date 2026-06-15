@@ -28,6 +28,8 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.asserts.Assertion;
 
 public class BaseClass {
 
@@ -117,7 +119,7 @@ public class BaseClass {
 
 	public static void selectByVisibleText(WebElement element, String text) {
 		Select s = new Select(element);
-		s.selectByVisibleText(text);
+		s.selectByVisibleText(text.trim());
 
 	}
 
@@ -149,26 +151,35 @@ public class BaseClass {
 		return element.getText();
 
 	}
+	
+	public void verifyText(WebElement element, String expected) {
+		
+		String actual  = element.getText();
+		Assert.assertEquals(actual.trim(), expected);
+	}
 
+	
 	/*
 	 * public static String excelRead(String sheetName, int rowNo, int cellNo)
 	 * throws Exception {
 	 * 
 	 * File f = new
-	 * File("D:\\DOC\\Testing-Workspace\\Selenium-Framework\\excel\\Data.xlsx");
+	 * File("D:\\Odoo\\Eclipse\\Eclipse-WorkSpace\\Selenium-Framework\\excel\\Data.xlsx");
 	 * 
 	 * // To read a file FileInputStream fis = new FileInputStream(f);
 	 * 
 	 * Workbook w = new XSSFWorkbook(fis);
 	 * 
-	 * //workbook -->sheet -->row-->cell-->data //to get sheet from workbook
-	 * interface Sheet s = w.getSheet(sheetName);
+	 * //workbook -->sheet -->row-->cell-->data //to get sheet from workbook Sheet s
+	 * = w.getSheet(sheetName);
 	 * 
-	 * // to get row from sheet interface Row r = s.getRow(1);
+	 * 
+	 * // to get row from sheet interface // Row r = s.getRow(1); //
 	 * System.out.println(r);
 	 * 
-	 * // to get cell from row interface Cell c = r.getCell(0);
+	 * // to get cell from row interface // Cell c = r.getCell(0); //
 	 * System.out.println(c);
+	 * 
 	 * 
 	 * 
 	 * Row r = s.getRow(rowNo);
@@ -203,24 +214,59 @@ public class BaseClass {
 	 * 
 	 * }
 	 */
+	 
 
+	/* 
+	 * public static String excelRead(String sheetName, int rowNo, int cellNo)
+	 * throws Exception {
+	 * 
+	 * File file = new
+	 * File("D:\\Odoo\\Eclipse\\Eclipse-WorkSpace\\Selenium-Framework\\excel\\Data.xlsx");
+	 * FileInputStream fis = new FileInputStream(file); Workbook workbook = new
+	 * XSSFWorkbook(fis);
+	 * 
+	 * Sheet sheet = workbook.getSheet(sheetName); Row row = sheet.getRow(rowNo);
+	 * Cell cell = row.getCell(cellNo);
+	 * 
+	 * DataFormatter formatter = new DataFormatter(); String value =
+	 * formatter.formatCellValue(cell);
+	 * 
+	 * return value; }
+	 */
+	
+	
 	public static String excelRead(String sheetName, int rowNo, int cellNo) throws Exception {
+	    
+	    String path = System.getProperty("user.dir")+"\\excel\\Data.xlsx";
+	    FileInputStream fis = new FileInputStream(path);
 
-	    File file = new File("D:\\DOC\\Testing-Workspace\\Selenium-Framework\\excel\\Data.xlsx");
-	    FileInputStream fis = new FileInputStream(file);
 	    Workbook workbook = new XSSFWorkbook(fis);
-
 	    Sheet sheet = workbook.getSheet(sheetName);
+
+	    if (sheet == null) {
+	        throw new RuntimeException("Sheet not found: " + sheetName);
+	    }
+
 	    Row row = sheet.getRow(rowNo);
+	    if (row == null) {
+	        throw new RuntimeException("Row not found: " + rowNo);
+	    }
+
 	    Cell cell = row.getCell(cellNo);
+	    if (cell == null) {
+	        throw new RuntimeException("Cell not found: " + cellNo);
+	    }
 
 	    DataFormatter formatter = new DataFormatter();
 	    String value = formatter.formatCellValue(cell);
 
-	   
-	    return value;
+	    
+	    fis.close();
+
+	    return value.trim();
 	}
+
 	
 	
-	
+
 }

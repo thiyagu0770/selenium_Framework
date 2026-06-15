@@ -15,10 +15,10 @@ public class SearchHotelPojo extends BaseClass {
 	private WebElement location;
 	
 	@FindBy(id="hotels")
-	private WebElement hotel;
+	private WebElement hotels;
 	
 	@FindBy(id="room_type")
-	private WebElement room;
+	private WebElement roomtype;
 	
 	@FindBy(id="room_nos")
 	private WebElement roomnumber;
@@ -41,6 +41,9 @@ public class SearchHotelPojo extends BaseClass {
 	@FindBy(id="continue")
 	private WebElement continuebutton;
 	
+	
+	
+	
 
 	public WebElement getContinuebutton() {
 		return continuebutton;
@@ -62,12 +65,17 @@ public class SearchHotelPojo extends BaseClass {
 		return location;
 	}
 
-	public WebElement getHotel() {
-		return hotel;
+
+	public WebElement getHotels() {
+		return hotels;
 	}
 
-	public WebElement getRoom() {
-		return room;
+	public WebElement getRoomtype() {
+		return roomtype;
+	}
+
+	public void setRoomtype(WebElement roomtype) {
+		this.roomtype = roomtype;
 	}
 
 	public WebElement getRoomnumber() {

@@ -1,0 +1,32 @@
+{
+  "credentials": {
+    "username": "thiyaguadmin",
+    "password": "Admin@123"
+  },
+
+  "searchHotelData": [
+    {
+      "location": "Sydney",
+      "hotelName": "Hotel Creek",
+      "roomType": "Standard",
+      "noOfRooms": "1 - One",
+      "checkInDate": "23-01-2026",
+      "checkOutDate": "24-01-2026",
+      "adults": "2 - Two",
+      "children": "0 - None"
+    }
+  ],
+
+  "bookingData": [
+    {
+      "firstName": "Ramesh",
+      "lastName": "C",
+      "billingAddress": "Chennai, Tamil Nadu, India",
+      "creditCardNo": "4111111111111111",
+      "creditCardType": "VISA",
+      "expiryMonth": "January",
+      "expiryYear": "2028",
+      "cvvNumber": "123"
+    }
+  ]
+}
